@@ -1,0 +1,24 @@
+{
+    "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json#",
+    "configurations": {
+        "regex_dfa_test": {
+            "adapter": "vscode-cpptools",
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/build/test-http-message-parser",
+                "args": [
+                ],
+                "cwd": "${workspaceRoot}",
+                "externalConsole": true,
+                "stopAtEntry": false,
+                "MIMode": "gdb"
+            },
+            "breakpoints": {
+                "exception": {
+                    "caught": "Y",
+                    "uncaught": "Y"
+                }
+            }
+        }
+    }
+}
